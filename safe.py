@@ -23,6 +23,7 @@ class SAFE:
         functions = analyzer.analyze()
         instructions_list = None
         for function in functions:
+            print("function:",functions[function])
             if functions[function]['address'] == address:
                 instructions_list = functions[function]['filtered_instructions']
                 break
